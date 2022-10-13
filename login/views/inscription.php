@@ -1,5 +1,5 @@
 <?php 
-session_start();
+
 // $servername = "localhost";
 // $username = "pseudo";
 // $password = "mdp";
@@ -11,8 +11,12 @@ session_start();
 //   } catch(PDOException $e) {
 //     echo "Connection failed: " . $e->getMessage();
 //   }
+session_start();
 
-$bdd = new PDO('mysql:host=localhost:3306;dbname=espace_membre;charset=utf8;','root','root');
+
+
+
+$bdd = new PDO('mysql:host=localhost;dbname=espace_membre;charset=utf8;','root','root');
 if(isset($_POST['envoi'])){
     if(!empty($_POST['pseudo']) and !empty($_POST['mdp'])){
         $pseudo = htmlspecialchars($_POST['pseudo']);
