@@ -143,10 +143,11 @@ if(isset($_POST['submit2'])){
     <input type="number" name="calc2">
 </div>
 <br>
-<input type="submit" name="subPlus" value="+">
-<input type="submit" name="subDiv" value="/">
-<input type="submit" name="subMoin" value="-">
-<input type="submit" name="subFoix" value="*">
+<!--  stap any pour lma virgule dans les input -->
+<input type="submit" name="subPlus" value="+" step="any">
+<input type="submit" name="subDiv" value="/" step="any">
+<input type="submit" name="subMoin" value="-" step="any">
+<input type="submit" name="subFoix" value="*" step="any">
 
 <?php
 
